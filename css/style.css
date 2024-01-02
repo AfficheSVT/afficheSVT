@@ -23,8 +23,7 @@ html {
 
 section {
     width: 100vw;
-    height: 400vh;
-    background-color: red;
+    height: 100vh;
 }
 
 .container {
@@ -34,9 +33,6 @@ section {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
-    background-color: green;
-
-    height: 300vh;
 }
 
 .carousel>input {
