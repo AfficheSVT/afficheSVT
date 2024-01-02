@@ -254,7 +254,7 @@ section {
     justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .carousel__slide figure {
         flex-direction: column;
     }
@@ -273,7 +273,7 @@ section {
         margin: 0 -10px;
         justify-content: space-evenly;
     }
-}
+} */
 
 @media screen and (max-width: 690px) {
 
@@ -295,4 +295,9 @@ section {
         margin: 20px 0;
     }
 
+}
+
+.paragraphe {
+    font-size: 16px;
+    opacity: 0.6;
 }
