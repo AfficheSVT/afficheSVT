@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'GothamBold';
     src: url('../font/Gotham-Bold.otf') format('opentype');
 }
@@ -14,10 +14,10 @@
 @font-face {
     font-family: GothamBook;
     src: url('../font/GothamBook.ttf') format('opentype');
-}
+} */
 
 html {
-    font-family: 'GothamBook', sans-serif;
+    /* font-family: 'GothamBook', sans-serif; */
     background-color: #F4F4F4;
 }
 
