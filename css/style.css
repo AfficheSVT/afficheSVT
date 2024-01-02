@@ -25,7 +25,19 @@ section {
     transform: translate(0, -50%);
 }
 
+.carousel {
+    display: block;
+    text-align: left;
+    position: relative;
+    margin-bottom: 22px;
+}
+
 .carousel>input {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
     overflow: hidden;
     padding: 0;
     position: absolute;
@@ -64,7 +76,13 @@ section {
 }
 
 .carousel__slides {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
     display: flex;
 }
 
@@ -211,6 +229,29 @@ section {
 }
 
 @media screen and (max-width: 900px) {
+    .container {
+        margin: 100px 0 0 0;
+    }
+
+    .carousel__slide div {
+        position: relative;
+        width: 60%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .carousel__slide div img {
+        width: 100%;
+        object-fit: contain;
+        display: flex;
+    }
+
+    .carousel__slide img {
+        display: block;
+        flex: 1 1 auto;
+        object-fit: none;
+    }
+
     .carousel__slide figure {
         flex-direction: column;
     }
@@ -232,12 +273,6 @@ section {
 }
 
 @media screen and (max-width: 690px) {
-
-    .carousel__slide div {
-        position: relative;
-        width: 100%;
-        margin-top: 350px;
-    }
 
     .carousel__thumbnails {
         display: flex;
