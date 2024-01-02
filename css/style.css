@@ -23,7 +23,8 @@ html {
 
 section {
     width: 100vw;
-    height: 100vh;
+    height: 400vh;
+    background-color: red;
 }
 
 .container {
@@ -33,23 +34,12 @@ section {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
+    background-color: green;
+
+    height: 300vh;
 }
 
-/* .carousel {
-    display: block;
-    text-align: left;
-    position: relative;
-    margin-bottom: 22px;
-
-    background-color: red;
-} */
-
 .carousel>input {
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
     overflow: hidden;
     padding: 0;
     position: absolute;
@@ -236,8 +226,7 @@ section {
 
 @media screen and (max-width: 900px) {
     .carousel__slide figure {
-        display: block;
-        /* flex-direction: column; */
+        flex-direction: column;
     }
 
     .carousel__slide figcaption {
